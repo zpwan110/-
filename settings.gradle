@@ -1,1 +1,0 @@
-include ':app', ':base', ':matisse', ':jcvideoplayer-lib', ':share', ':library'
