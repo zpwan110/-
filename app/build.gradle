@@ -74,7 +74,7 @@ android {
     }
     productFlavors {
         app_H5_market{}
-//        app_umeng_market{manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_umeng_market"]}
+        app_umeng_market{manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_umeng_market"]}
 //        app_wandoujia_market {
 //            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_wandoujia_market"]
 //        }
