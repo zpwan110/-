@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/libs"><file name="blurringview-1.0.0.aar" path="/Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/libs/blurringview-1.0.0.aar"/></source></dataSet><dataSet config="release"><source path="/Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/release/jniLibs"/></dataSet></merger>
