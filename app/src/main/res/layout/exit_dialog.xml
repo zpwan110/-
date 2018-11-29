@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="bottom"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center"
+    android:text="退出登录"
+    android:textColor="#000000"
+    android:textSize="15sp"/>
+    <View
+        android:layout_height="5dp"
+        android:layout_width="match_parent"
+        android:background="@color/progress_bg"
+        />
+    <TextView
+        android:id="@+id/exit_conmit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="确认"/>
+    <View android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="@color/progress_bg"/>
+    <TextView
+        android:id="@+id/exit_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="取消"/>
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="@color/progress_bg"
+        />
+</LinearLayout>

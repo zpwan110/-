@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">众帘</string>
+    <string name="login_hint_account">请输入您的经销商账号</string>
+    <string name="login_hint_pwd">请输入您的密码</string>
+    <string name="share_content">【欧曼臣】是一款展示最新罗马帘及窗帘布料的APP，让每一位合作伙伴有钱可赚。
+每一件欧曼臣的产品都融入了公司的原创设计理念。原创是传统的挑战者，是蜕变，是创造。
+做为一种软装饰，在现代家居中独具魅力，欧曼臣罗马帘以其和谐的色调、柔和的质感、多变的图案营造了家居温馨的格调，充分迎合了现代都市人家居生活的品质需求。几个别出心裁的罗马帘会让家因此而温馨美丽，让生活更加有色有味，是营造家居氛围的点睛之笔。</string>
+    <string name="app_about">欧曼臣是一款专注于窗帘介绍，窗帘试用，窗帘设计的app</string>
+
+</resources>

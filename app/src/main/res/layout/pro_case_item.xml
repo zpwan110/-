@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <View
+        android:id="@+id/pager_line"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="#f1f4f6"
+        />
+    <HorizontalScrollView
+        android:id="@+id/hl_images"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/ll_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        tools:text="罗马帘跟家里的欧式窗很配，完全没有违和感！下次还来"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ico_date"
+            android:scaleType="center"
+            />
+        <TextView
+            android:id="@+id/tv_bottom_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#c2c2c2"
+            tools:text="2018.02.02"/>
+
+    </LinearLayout>
+</LinearLayout>

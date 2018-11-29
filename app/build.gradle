@@ -1,0 +1,130 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId "com.crowd.curtain"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0.1"
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
+        testInstrumentationRunner rootProject.ext.android.testInstrumentationRunner
+        vectorDrawables.useSupportLibrary = true
+        flavorDimensions "versionCode"
+        resourcePrefix ""
+    }
+    allprojects {
+        repositories {
+            mavenCentral()
+        }
+    }
+    //设置java版本
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    aaptOptions { cruncherEnabled = false }
+    signingConfigs {
+        Properties keystorePro = new Properties()
+        keystorePro.load(new FileInputStream(file('../keystore.properties')))
+        release {
+            storeFile file(keystorePro['store'])
+            storePassword keystorePro['storePass']
+            keyAlias keystorePro['alias']
+            keyPassword keystorePro['pass']
+            v1SigningEnabled true
+            v2SigningEnabled false
+        }
+        debug {
+            storeFile file(keystorePro['store'])
+            storePassword keystorePro['storePass']
+            keyAlias keystorePro['alias']
+            keyPassword keystorePro['pass']
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false//混淆
+            zipAlignEnabled true//压缩优化
+            shrinkResources false//移除无用resource资源
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "curtain_${variant.productFlavors[0].name}" + "_${defaultConfig.versionName}.apk"
+                }
+            }
+        }
+        debug {
+            signingConfig signingConfigs.release
+            minifyEnabled false//混淆
+            zipAlignEnabled true//压缩优化
+            shrinkResources false//移除无用resource资源
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        app_H5_market{}
+//        app_umeng_market{manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_umeng_market"]}
+//        app_wandoujia_market {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_wandoujia_market"]
+//        }
+//        app_meizu_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_meizu_market"] }
+//        app_360_market{manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_360_market"]}
+//        app_xiaomi_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_xiaomi_market"] }
+
+//        app_huawei_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_huawei_market"] }
+//        app_baidu_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_baidu_market"] }
+//        app_oppo_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_oppo_market"] }
+//        app_yyb_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_yyb_market"] }
+//        productFlavors.all { flavor ->
+//            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+//        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation(name: 'blurringview-1.0.0', ext: 'aar')
+    api project(path: ':base')
+    implementation project(':matisse')
+    implementation project(':jcvideoplayer-lib')
+    implementation rootProject.ext.dependencies.constraintLayout
+    implementation rootProject.ext.dependencies.percent
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //PushSDK必须依赖基础组件库，所以需要加入对应依赖
+    compile 'com.umeng.sdk:common:1.5.0'
+    //PushSDK必须依赖utdid库，所以需要加入对应依赖
+    compile 'com.umeng.sdk:utdid:1.1.5.3'
+    //PushSDK
+    compile 'com.umeng.sdk:push:4.1.0'
+    api 'co.lujun:androidtagview:1.0.0'
+    compile project(path: ':share')
+    compile project(path: ':library')
+}

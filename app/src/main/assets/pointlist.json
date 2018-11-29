@@ -1,0 +1,218 @@
+[
+{
+"result": "未查询到报告",
+"advice": "",
+"checkPoint": "usingAmt",
+"checkPointCn": "未结清总额",
+"pointType": "UsingDetail",
+"evdience": "无央行征信报告",
+"showType": false
+},
+{
+"result": "未查询到报告",
+"advice": "",
+"checkPoint": "overdueMth",
+"checkPointCn": "累计逾期期数",
+"pointType": "overdueDetail",
+"evdience": "无央行征信报告",
+"showType": false
+},
+{
+"result": "未查询到报告",
+"advice": "",
+"checkPoint": "creditSum",
+"checkPointCn": "信用总览",
+"pointType": "creditAbstract",
+"evdience": "无央行征信报告",
+"showType": false
+},
+{
+"result": "未查询到报告",
+"advice": "",
+"checkPoint": "warrantSum",
+"checkPointCn": "担保情况总结",
+"pointType": "warrantDetail",
+"evdience": "无报告",
+"showType": false
+},
+{
+"result": "账户（人民币）总数适中",
+"advice": "",
+"checkPoint": "usingAccCnt",
+"checkPointCn": "未结清账户数（人民币）",
+"pointType": "creditAbstract",
+"evdience": "账户（人民币）总数为2个，其中信用卡人民币账户数为2，其他贷款账户数0，购房贷款账户数0；",
+"showType": false
+},
+{
+"result": "无购房贷款",
+"advice": "",
+"checkPoint": "HlUsingSum",
+"checkPointCn": "购房贷款情况",
+"pointType": "UsingDetail",
+"evdience": "累计购房贷款授信金额***元，余额0元；",
+"showType": false
+},
+{
+"result": "近3个月，无信贷申请记录",
+"advice": "",
+"checkPoint": "admitSum",
+"checkPointCn": "近3个月审批通过情况总结",
+"pointType": "admitDetail",
+"evdience": "近3个月无信贷业务记录",
+"showType": false
+},
+{
+"result": "无担保记录",
+"advice": "",
+"checkPoint": "warrantCnt",
+"checkPointCn": "担保笔数",
+"pointType": "warrantDetail",
+"evdience": "为他人担保笔数累计0元，其中信用卡担保笔数0，其他贷款担保笔数0；",
+"showType": false
+},
+{
+"result": "仍发生业务往来的机构数较少",
+"advice": "",
+"checkPoint": "creditOrgCnt",
+"checkPointCn": "仍有业务往来机构数",
+"pointType": "creditAbstract",
+"evdience": "仍发生业务往来机构数有1家，其中信用卡业务的有1家，其他贷款业务的有0家，购房贷款业务的有0家；",
+"showType": false
+},
+{
+"result": "无当前逾期",
+"advice": "",
+"checkPoint": "overdueAmt",
+"checkPointCn": "当前逾期金额",
+"pointType": "overdueDetail",
+"evdience": "当前逾期金额0元，其中信用卡当前逾期金额0元，其他贷款当前逾期0元，购房贷款逾期金额0元；",
+"showType": false
+},
+{
+"result": "近3个月，无疑似审批未通过记录",
+"advice": "",
+"checkPoint": "rejectCnt",
+"checkPointCn": "审批未通过次数",
+"pointType": "admitDetail",
+"evdience": "近3个月申请但业务未通过次数为0次；",
+"showType": false
+},
+{
+"result": "无担保记录",
+"advice": "",
+"checkPoint": "warrantAmt",
+"checkPointCn": "担保金额",
+"pointType": "warrantDetail",
+"evdience": "为他人担保金额累计0元，其中信用卡担保金额0，其他贷款担保金额0；",
+"showType": false
+},
+{
+"result": "未查询到报告",
+"advice": "",
+"checkPoint": "overdueAccCnt",
+"checkPointCn": "累计逾期账户数",
+"pointType": "overdueDetail",
+"evdience": "无央行征信报告",
+"showType": false
+},
+{
+"result": "未查询到报告",
+"advice": "",
+"checkPoint": "overdueSum",
+"checkPointCn": "当前逾期情况",
+"pointType": "overdueDetail",
+"evdience": "无央行征信报告",
+"showType": false
+},
+{
+"result": "未查询到报告",
+"advice": "",
+"checkPoint": "CcUsingRate",
+"checkPointCn": "信用卡授信使用率",
+"pointType": "UsingDetail",
+"evdience": "无央行征信报告",
+"showType": false
+},
+{
+"result": "无担保记录",
+"advice": "",
+"checkPoint": "warrantBal",
+"checkPointCn": "担保余额",
+"pointType": "warrantDetail",
+"evdience": "为他人担保余额累计0元，其中信用卡担保余额0，其他贷款担保余额0；",
+"showType": false
+},
+{
+"result": "未查询到报告",
+"advice": "",
+"checkPoint": "overdueM4Mth",
+"checkPointCn": "90天以上逾期",
+"pointType": "overdueDetail",
+"evdience": "无央行征信报告",
+"showType": false
+},
+{
+"result": "信用卡（人民币）最高授信额度无问题",
+"advice": "",
+"checkPoint": "creditInterval",
+"checkPointCn": "授信区间",
+"pointType": "creditAbstract",
+"evdience": "单笔最高授信总额21000元，单笔最低授信总额5200元，其中信用卡授信区间为[5200，21000]，其他贷款授信区间为[***,***]，购房贷款授信区间为[***,***]；",
+"showType": false
+},
+{
+"result": "未查询到报告",
+"advice": "",
+"checkPoint": "debtSum",
+"checkPointCn": "当前负债情况",
+"pointType": "UsingDetail",
+"evdience": "无央行征信报告",
+"showType": false
+},
+{
+"result": "近1个月，无信贷申请记录",
+"advice": "",
+"checkPoint": "queryAgen1Mth",
+"checkPointCn": "近1个月机构查询次数",
+"pointType": "admitDetail",
+"evdience": "近1个月机构累计查询记录共0笔，其中查询原因为信用卡审批0笔，贷款0笔；",
+"showType": false
+},
+{
+"result": "无担保记录",
+"advice": "",
+"checkPoint": "warrantPop",
+"checkPointCn": "担保人数",
+"pointType": "warrantDetail",
+"evdience": "累计为0人担保，其中***个担保人贷款未结清；",
+"showType": false
+},
+{
+"result": "近3个月，无信贷申请记录",
+"advice": "",
+"checkPoint": "queryAgen3Mth",
+"checkPointCn": "近3个月机构查询次数",
+"pointType": "admitDetail",
+"evdience": "近3个月机构累计查询记录共0笔，其中查询原因为信用卡审批0笔，贷款0笔；",
+"showType": false
+},
+{
+"result": "未查询到报告",
+"advice": "",
+"checkPoint": "firstLoanTime",
+"checkPointCn": "首贷日",
+"pointType": "creditAbstract",
+"evdience": "无央行征信报告",
+"showType": false
+},
+{
+"result": "未查询到报告",
+"advice": "",
+"checkPoint": "OlDue2MthCnt",
+"checkPointCn": "近2个月其他贷款到期笔数",
+"pointType": "UsingDetail",
+"evdience": "无央行征信报告",
+"showType": false
+}
+]

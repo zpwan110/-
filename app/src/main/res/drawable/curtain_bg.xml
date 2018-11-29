@@ -1,0 +1,22 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- outer circle -->
+    <item >
+        <shape android:shape="rectangle"
+            >
+            <!-- 描边 -->
+            <stroke
+                android:width="0.8dp"
+                android:color="#dbdbdb"
+                android:dashWidth="0dp"
+                android:dashGap="0dp"
+                />
+            <solid android:color="#ffffff"/>
+            <corners
+                android:topLeftRadius="7dp"
+                android:topRightRadius="7dp"
+                android:bottomRightRadius="7dp"
+                android:bottomLeftRadius="7dp"
+                />
+        </shape>
+    </item>
+</layer-list>
