@@ -14,13 +14,6 @@ import org.json.JSONObject;
 
 import java.io.File;
 
-import base.BroadcastConstants;
-import base.PermissionActivity;
-import base.http.Callback;
-import base.http.ErrorModel;
-import base.injectionview.Id;
-import base.injectionview.Layout;
-import base.util.ToastUtil;
 import com.crowd.curtain.R;
 import com.crowd.curtain.api.ApplicationApi;
 import com.crowd.curtain.base.App;
@@ -32,6 +25,14 @@ import com.crowd.curtain.ui.fragment.ClassisFragment;
 import com.crowd.curtain.ui.fragment.HomeFragment;
 import com.crowd.curtain.ui.fragment.VideoFragment;
 import com.crowd.curtain.utils.AppSharePerference;
+
+import base.BroadcastConstants;
+import base.PermissionActivity;
+import base.http.Callback;
+import base.http.ErrorModel;
+import base.injectionview.Id;
+import base.injectionview.Layout;
+import base.util.ToastUtil;
 import top.zibin.luban.Luban;
 import top.zibin.luban.OnCompressListener;
 

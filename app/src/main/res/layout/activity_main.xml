@@ -11,36 +11,27 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/mainTabBar"/>
 
+
     <com.crowd.curtain.ui.customview.MainNavigateTabBar
         android:id="@+id/mainTabBar"
         android:layout_width="match_parent"
         android:layout_height="50.0dip"
         android:layout_alignParentBottom="true"
-        android:background="@color/main_black_text"
         app:containerId="@+id/main_container"
         app:navigateTabSelectedTextColor="@color/comui_tab_text_color"
-        app:navigateTabTextColor="@color/tab_text_normal"/>
-
+        app:navigateTabTextColor="@color/tab_text_normal"
+        android:background="@mipmap/main_bar_bg"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/mainTabBar"
-        android:background="@mipmap/comui_bar_top_shadow"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="76.0dip"
+        android:id="@+id/tab_post_icon"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:onClick="onClickPublish"
         android:layout_alignParentBottom="true"
-        android:background="@android:color/transparent"
         android:gravity="center|top"
-        android:orientation="vertical">
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:src="@mipmap/post_normal"
+        android:layout_marginBottom="29dp"/>
 
-        <ImageView
-            android:id="@+id/tab_post_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onClickPublish"
-            android:src="@mipmap/post_normal"/>
-    </LinearLayout>
 </RelativeLayout>

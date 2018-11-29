@@ -53,10 +53,14 @@ public class HomeFragment extends BaseFragment implements NestedScrollView.OnScr
     RecyclerView mCurtainBodylist;
     @Id(R.id.curtainHeadlist)
     RecyclerView mCurtainHeadlist;
+    @Id(R.id.tv_center_title)
+    TextView centerText;
     @Id(R.id.leftIcon)
     ImageView leftIcon;
     @Id(R.id.iv_search)
     ImageView ivSearch;
+    @Id(R.id.iv_right)
+    ImageView ivRight;
     @Id(R.id.iv_toTop)
     ImageView ivTotop;
     @Id(R.id.cate_body_name)
@@ -95,7 +99,8 @@ public class HomeFragment extends BaseFragment implements NestedScrollView.OnScr
         super.initViews();
         leftIcon.setVisibility(View.VISIBLE);
         ivSearch.setVisibility(View.VISIBLE);
-
+        ivRight.setVisibility(View.VISIBLE);
+        centerText.setText(R.string.app_name);
 
         nestedScroll.setOnScrollChangeListener(this);
         nestedScroll.scrollTo(0,0);

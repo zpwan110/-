@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="type_img" type="id">10010</item>
-    <item name="type_hight_img" type="id">10012</item>
-    <item name="type_name" type="id">10011</item>
+    <item name="type_img" type="id"></item>
+    <item name="type_hight_img" type="id"></item>
+    <item name="type_name" type="id"></item>
     <item type="id" name="tag_first">
     </item>
     <item type="id" name="tag_second">

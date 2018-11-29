@@ -58,11 +58,11 @@ android {
             zipAlignEnabled true//压缩优化
             shrinkResources false//移除无用resource资源
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            applicationVariants.all { variant ->
+            /*applicationVariants.all { variant ->
                 variant.outputs.all {
                     outputFileName = "curtain_${variant.productFlavors[0].name}" + "_${defaultConfig.versionName}.apk"
                 }
-            }
+            }*/
         }
         debug {
             signingConfig signingConfigs.release
@@ -73,7 +73,7 @@ android {
         }
     }
     productFlavors {
-        app_H5_market{}
+//        app_H5_market{}
 //        app_umeng_market{manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_umeng_market"]}
 //        app_wandoujia_market {
 //            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_wandoujia_market"]
@@ -82,13 +82,13 @@ android {
 //        app_360_market{manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_360_market"]}
 //        app_xiaomi_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_xiaomi_market"] }
 
-        app_huawei_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_huawei_market"] }
-        app_baidu_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_baidu_market"] }
-        app_oppo_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_oppo_market"] }
-        app_yyb_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_yyb_market"] }
-        productFlavors.all { flavor ->
-            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
-        }
+//        app_huawei_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_huawei_market"] }
+//        app_baidu_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_baidu_market"] }
+//        app_oppo_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_oppo_market"] }
+//        app_yyb_market { manifestPlaceholders = [UMENG_CHANNEL_VALUE: "app_yyb_market"] }
+//        productFlavors.all { flavor ->
+//            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+//        }
     }
     lintOptions {
         disable 'MissingTranslation'

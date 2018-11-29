@@ -1,5 +1,6 @@
 package com.crowd.curtain.ui.customview;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
@@ -61,6 +62,7 @@ public class MainNavigateTabBar extends LinearLayout implements View.OnClickList
         this(context, attrs, 0);
     }
 
+    @SuppressLint("ResourceAsColor")
     public MainNavigateTabBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
@@ -80,8 +82,6 @@ public class MainNavigateTabBar extends LinearLayout implements View.OnClickList
         } else {
             mSelectedTextColor = (ColorStateList)context.getResources().getColorStateList(R.color.button_text);
         }
-        setBackgroundColor(Color.parseColor("#000000"));
-
         mViewHolderList = new ArrayList<>();
     }
 
@@ -350,7 +350,7 @@ public class MainNavigateTabBar extends LinearLayout implements View.OnClickList
 
 
     public static class TabParam {
-        public int backgroundColor = android.R.color.black;
+        public int backgroundColor = 0;
         public int iconResId;
         public int iconSelectedResId;
         public int titleStringRes;
