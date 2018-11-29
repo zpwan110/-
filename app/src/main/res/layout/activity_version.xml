@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+    <include
+        android:id="@+id/user_top"
+        layout="@layout/title_layout"/>
+    <ImageView
+        android:id="@+id/iv_launch"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/user_top"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/iv_launch"
+        tools:text="1.1.0"/>
+</RelativeLayout>

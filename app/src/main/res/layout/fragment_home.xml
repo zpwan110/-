@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/topTitle"
+        layout="@layout/title_layout" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <base.widget.FixRatioFrameLayout xmlns:fix="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pager_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                fix:baseOnWidth="true"
+                fix:ratio="0.5">
+
+                <com.crowd.curtain.ui.customview.AutoPlayViewPager
+                    android:id="@+id/main_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" />
+
+                <base.indicator.CirclePageIndicator xmlns:indicator="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/tran_white"
+                    indicator:centered="true"
+                    indicator:fillColor="#FF888888"
+                    indicator:radius="3dp" />
+            </base.widget.FixRatioFrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/curtain_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/cate_body_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    tools:text="罗马帘" />
+
+                <ImageView
+                    android:id="@+id/type_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/cate_body_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/title_diver" />
+
+                <View
+                    android:id="@+id/diver_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/type_head"
+                    android:background="#F2F2F5" />
+                <!--<curtain.photograph.com.ui.customview.XHorizontalListView
+                    android:id="@+id/cate_body_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_below="@+id/diver_line"
+                    android:outlineProvider="background"
+                    >-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cate_body_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_below="@+id/diver_line"
+                    android:outlineProvider="background" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#e9e9ea" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/rexiao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="热销窗帘"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/curtain_type"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/loadBodyMore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/curtain_more_bg"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="加载更多" />
+
+            <RelativeLayout
+                android:id="@+id/curtain_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/cate_head_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="帘头" />
+
+                <ImageView
+                    android:id="@+id/type_diver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/cate_head_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/title_diver" />
+
+                <View
+                    android:id="@+id/diver_line_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/type_diver"
+                    android:background="#F2F2F5" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cate_head_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_below="@+id/diver_line_b"
+                    android:outlineProvider="background" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#e9e9ea" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/curtainHeadlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:padding="8dp" />
+            <TextView
+                android:id="@+id/loadHeadMore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/curtain_more_bg"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="50dp"
+                android:text="加载更多" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/iv_toTop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginRight="19dp"
+        android:src="@mipmap/dingbu"
+        android:visibility="gone" />
+</RelativeLayout>

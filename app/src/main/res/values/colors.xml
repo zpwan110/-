@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#30ffffff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent" >#00000000</color>
+    <color name="white" >#ffffff</color>
+    <color name="main_bg">#123456</color>
+    <color name="main_gray_text">#767574</color>
+    <color name="window_bg">#40000000</color>
+    <color name="main_black_text">#000000</color>
+    <color name="black_text">#000000</color>
+    <color name="tran_white" >#30ffffff</color>
+    <color name="view_driver">#f4f4f4</color>
+    <color name="font_gray">#c9c9c9</color>
+    <color name="font_gray_color">#8F8F8F</color>
+    <color name="font_black_color">#323232</color>
+    <color name="theme_orange">#f57525</color>
+    <color name="font_sub_normal">#8b8b8b</color>
+    <color name="theme_blue">#36b5f5</color>
+    <color name="goods_detail_price">#ff9600</color>
+    <color name="font_pub_fund">#adadad</color>
+    <color name="progress_bg">#e0dfdf</color>
+    <color name="center_orange">#f85c2c</color>
+    <color name="faceid_text_color">#3f3f3f</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="default_item_pressed_bg">#11000000</color>
+    <color name="red_auth">#f74140</color>
+    <color name="line">#ffd3dde6</color>
+    <color name="red_btn">#f84040</color>
+    <color name="pressed_color" >#f8f8f8</color>
+    <color name="font_normal">#332f28</color>
+    <color name="cut_line">#ecf1f4</color>
+    <color name="goods_detail_btn_blue">#38adff</color>
+    <color name="button_text">#ff9600</color>
+    <color name="tab_text_normal">#686966</color>
+    <color name="comui_tab_text_color">#eeeeee</color>
+    <color name="text_color">#fefefe</color>
+    <color name="text_selecte_color">#8a8a8a</color>
+    <color name="text_bg_color">#2c2c2c</color>
+    <color name="btn_radio_on" >#ffffff</color>
+    <color name="btn_radio_off">#d3bd51</color>
+</resources>

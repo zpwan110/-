@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jingshu.com.base">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"
+            android:name="base.PermissionActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="base.BaseFragmentHostActivity"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="base.imagezoom.activity.ImagePagerActivity"/>
+    </application>
+
+
+
+</manifest>
