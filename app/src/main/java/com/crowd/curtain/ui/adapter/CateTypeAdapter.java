@@ -70,28 +70,20 @@ public class CateTypeAdapter extends BaseRecyclerAdapter<CateEntity> {
         ImageView cateGrayImg =  convertView.findViewById(R.id.type_img);
         ImageView cateHightImg = convertView.findViewById(R.id.type_hight_img);
         TextView cateName = convertView.findViewById(R.id.type_name);
-        if(!model.isAll){
-            PicassoImageLoader.getInstance().displayImage(mContext,model.activeIcon,cateHightImg);
-            PicassoImageLoader.getInstance().displayImage(mContext,model.inactiveIcon,cateGrayImg);
-            cateName.setText(model.name);
-            if(model.isSelected()){
-                cateHightImg.setVisibility(View.VISIBLE);
-            }else {
-                cateHightImg.setVisibility(View.INVISIBLE);
-            }
-        }else{
-            cateName.setText("全部");
-            PicassoImageLoader.getInstance().displayImage(mContext,R.mipmap.quanbu,cateGrayImg);
-            cateGrayImg.setVisibility(View.VISIBLE);
+        PicassoImageLoader.getInstance().displayImage(mContext,"https://gxqfz.omclml.com/thumb/"+model.active_icon,cateHightImg);
+        PicassoImageLoader.getInstance().displayImage(mContext,"https://gxqfz.omclml.com/thumb/"+model.inactive_icon,cateGrayImg);
+        cateName.setText(model.name);
+        if(model.isSelect()){
+            cateHightImg.setVisibility(View.VISIBLE);
+        }else {
             cateHightImg.setVisibility(View.INVISIBLE);
-
         }
     }
 
     @Override
     public int getItemPos(CateEntity s) {
         for (int i = 0; i < mDatas.size(); i++) {
-            if(s.productCateId.equals(mDatas.get(i).productCateId)){
+            if(s.getId().equals(mDatas.get(i).getId())){
                 return i;
             }
         }

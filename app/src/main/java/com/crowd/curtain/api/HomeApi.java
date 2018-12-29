@@ -29,8 +29,8 @@ public class HomeApi {
      * @param callback
      * @return
      */
-    public static Call getTypeCurtain(String productCateId,int page,int size,final Callback<JSONObject> callback){
-        Request request = new Request.Builder().url(ServerConfig.getTypeCurtain()+productCateId+"?page="+page+"&per-page="+size).build();
+    public static Call getTypeCurtain(String productCateId,final Callback<JSONObject> callback){
+        Request request = new Request.Builder().url(ServerConfig.getTypeCurtain()+productCateId).build();
         return HttpClient.execute(request,callback);
     }
 }

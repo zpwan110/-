@@ -34,7 +34,7 @@ public class VideoPlayerActivity extends AppBaseActivity {
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);touc
         videoUrl = getIntent().getStringExtra("videoUrl");
         JCVideoPlayer.FULLSCREEN_ORIENTATION = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
         JCVideoPlayer.NORMAL_ORIENTATION = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
@@ -65,7 +65,7 @@ public class VideoPlayerActivity extends AppBaseActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        jcvVideo.release();
+        JCVideoPlayer.backPress();
         finish();
     }
 }

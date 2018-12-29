@@ -16,14 +16,19 @@ import android.widget.CursorAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.SimpleAdapter;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import base.eventbus.Actions;
+import base.eventbus.EventBus;
 import base.http.Callback;
 import base.http.ErrorModel;
 import base.injectionview.Click;
@@ -36,25 +41,26 @@ import base.widget.recycler.LinearSpacingItemDecoration;
 import base.widget.searchview.RecordSQLiteOpenHelper;
 import base.widget.searchview.SearchEditText;
 import base.widget.searchview.SearchListView;
-import co.lujun.androidtagview.TagContainerLayout;
-import co.lujun.androidtagview.TagView;
-import com.crowd.curtain.R;
+import base.widget.tagview.TagContainerLayout;
+import base.widget.tagview.TagView;
+
 import com.crowd.curtain.api.SearchApi;
 import com.crowd.curtain.base.App;
 import com.crowd.curtain.base.AppBaseActivity;
 import com.crowd.curtain.common.model.CurtainSearch;
 import com.crowd.curtain.ui.adapter.CurtainSearchAdapter;
+import com.crowd.curtain.R;
+import com.crowd.curtain.ui.adapter.DelCall;
+import com.crowd.curtain.ui.adapter.SimpleCustAdapter;
 
 import static base.widget.recycler.BaseRefreshLayout.LOADMORE;
 import static base.widget.recycler.BaseRefreshLayout.REFRESH;
 
 @Layout(R.layout.activity_search)
-public class SearchActivity extends AppBaseActivity implements RefreshLayoutDelegate{
+public class SearchActivity extends AppBaseActivity implements RefreshLayoutDelegate,DelCall{
     private final String sql="select id as _id,name from records where name = ?";
     @Id(R.id.clear_search)
-    TextView tv_clear;
-    @Id(R.id.serach_from)
-    LinearLayout searchLinear;
+    LinearLayout ll_clear;
     @Id(R.id.tv_backLeft)
     ImageView toBack;
     @Id(R.id.edt_search)
@@ -71,6 +77,8 @@ public class SearchActivity extends AppBaseActivity implements RefreshLayoutDele
     private BaseRefreshLayout refreshLayout;
     @Id(R.id.searchRecyclear)
     private RecyclerView searchRecyclear;
+    @Id(R.id.nestedScroll)
+    private ScrollView scrollView;
     CurtainSearchAdapter recyclerAdapter;
     private BaseAdapter adapter;
     // 数据库变量
@@ -129,6 +137,7 @@ public class SearchActivity extends AppBaseActivity implements RefreshLayoutDele
                 // ...
             }
         });
+        scrollView.invalidate();
     }
 
 
@@ -184,7 +193,7 @@ public class SearchActivity extends AppBaseActivity implements RefreshLayoutDele
                 // 注：若搜索框为空,则模糊搜索空字符 = 显示所有的搜索历史
                 String tempName = et_search.getText().toString();
                 queryData(tempName); // ->>关注1
-                searchLinear.setVisibility(View.VISIBLE);
+                scrollView.setVisibility(View.VISIBLE);
 
             }
         });
@@ -196,7 +205,7 @@ public class SearchActivity extends AppBaseActivity implements RefreshLayoutDele
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // 获取用户点击列表里的文字,并自动填充到搜索框内
-                TextView textView = (TextView) view.findViewById(android.R.id.text1);
+                TextView textView = (TextView) view.findViewById(R.id.clear_text);
                 searchContent = textView.getText().toString();
                 searchEditText.setText(searchContent);
                 searchCurtain(1,searchContent,recyclerAdapter);
@@ -204,9 +213,8 @@ public class SearchActivity extends AppBaseActivity implements RefreshLayoutDele
             }
         });
     }
-
     private void searchCurtain(int pageNum,String searchText,CurtainSearchAdapter recyclerAdapter) {
-        searchLinear.setVisibility(View.GONE);
+        scrollView.setVisibility(View.GONE);
         SearchApi.getSearchCurtain(pageNum, BaseRefreshLayout.SIZE, searchText, new Callback<JSONObject>() {
             @Override
             public void onSuccess(JSONObject jsonObject) {
@@ -262,28 +270,28 @@ public class SearchActivity extends AppBaseActivity implements RefreshLayoutDele
      * 关注1
      * 模糊查询数据 & 显示到ListView列表上
      */
+    List<String> list = new ArrayList<>();
     private void queryData(String tempName) {
-
+        list.clear();
         // 1. 模糊搜索
         Cursor cursor = helper.getReadableDatabase().rawQuery(
-                "select id as _id,name from records where name like '%" + tempName + "%' order by id desc ", null);
+                "select id as _id,name from records  order by id desc ", null);
+        while (cursor.moveToNext()){
+            int index = cursor.getColumnIndex("name");
+            list.add(cursor.getString(index));
+        }
         // 2. 创建adapter适配器对象 & 装入模糊搜索的结果
-        adapter = new SimpleCursorAdapter(mContext, android.R.layout.simple_list_item_1, cursor, new String[] { "name" },
-                new int[] { android.R.id.text1 }, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
-        // 3. 设置适配器
+        adapter = new SimpleCustAdapter(mContext,list,this);
         listView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
-
-        System.out.println(cursor.getCount());
         // 当输入框为空 & 数据库中有搜索记录时，显示 "删除搜索记录"按钮
-        if (tempName.equals("") && cursor.getCount() != 0){
-            tv_clear.setVisibility(View.VISIBLE);
+        if (cursor.getCount() != 0){
+            ll_clear.setVisibility(View.VISIBLE);
+        }else {
+            ll_clear.setVisibility(View.INVISIBLE);
         }
-        else {
-            tv_clear.setVisibility(View.INVISIBLE);
-        };
-
     }
+
 
     /**
      * 关注2：清空数据库
@@ -293,7 +301,16 @@ public class SearchActivity extends AppBaseActivity implements RefreshLayoutDele
         db = helper.getWritableDatabase();
         db.execSQL("delete from records");
         db.close();
-        tv_clear.setVisibility(View.INVISIBLE);
+        ll_clear.setVisibility(View.INVISIBLE);
+    }
+    /**
+     * 删除数据
+     */
+    private void deleteOneData(String tempName) {
+        db = helper.getWritableDatabase();
+        db.execSQL("delete from records where name = '" + tempName + "' ");
+        db.close();
+
     }
 
     /**
@@ -333,5 +350,15 @@ public class SearchActivity extends AppBaseActivity implements RefreshLayoutDele
         }
 
         return false;
+    }
+
+    @Override
+    public void del(String value, int i) {
+        list.remove(i);
+        adapter.notifyDataSetChanged();
+        deleteOneData(value);
+        if(listView.getCount()==0){
+            ll_clear.setVisibility(View.GONE);
+        }
     }
 }

@@ -116,7 +116,7 @@ public class UploadCaseActivity extends AppBaseActivity implements View.OnClickL
                         .countable(true)
                         .capture(true)
                         .captureStrategy(
-                                new CaptureStrategy(false, "curtain.photograph.com.fileprovider"))
+                                new CaptureStrategy(false, "com.crowd.curtain.fileprovider"))
                         .maxSelectable(selectCount)
                         .gridExpectedSize(
                                 getResources().getDimensionPixelSize(R.dimen.grid_expected_size))

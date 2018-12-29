@@ -5,15 +5,14 @@ INJECTED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/A
 INJECTED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:2:1-161:12
 INJECTED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:2:1-161:12
 MERGED from [:base] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/base/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-27:12
-MERGED from [co.lujun:androidtagview:1.0.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/androidtagview-1.0.0.aar/7d80da912e1ff4d604e76314b537d39c/AndroidManifest.xml:2:1-17:12
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:2:1-165:12
-MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-53:12
-MERGED from [:library] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/library/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/a1cd84f814254728ba3d9ea8cfcdef79/AndroidManifest.xml:2:1-11:12
 MERGED from [:blurringview-1.0.0:] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/blurringview-1.0.0.aar/c09d84870c2132bcb05bf94c6a7897d5/AndroidManifest.xml:2:1-15:12
 MERGED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:1-33:12
 MERGED from [:jcvideoplayer-lib] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/jcvideoplayer-lib/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:percent:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/percent-26.1.0.aar/40e06e17cd2839fbdcc1dea9c419a972/AndroidManifest.xml:17:1-28:12
+MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-53:12
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:2:1-165:12
+MERGED from [:library] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/library/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/78735ad9e318589fd1a7b3da53f047f2/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/0bdea9767706316253a8c7f9b4af3bf9/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/da1eaed59b6d7108af137cd332de0e4c/AndroidManifest.xml:17:1-31:12
@@ -48,10 +47,10 @@ INJECTED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/A
 		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:6:5-76
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:13:5-76
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:13:5-76
 MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:5-76
 MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:5-76
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:13:5-76
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:13:5-76
 	android:name
 		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:6:22-73
 uses-permission#android.permission.BLUETOOTH
@@ -74,12 +73,12 @@ ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/Andr
 		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:12:22-76
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:16:5-79
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:12:5-79
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:12:5-79
-MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-79
-MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-79
 MERGED from [:jcvideoplayer-lib] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/jcvideoplayer-lib/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-79
 MERGED from [:jcvideoplayer-lib] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/jcvideoplayer-lib/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-79
+MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-79
+MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-79
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:12:5-79
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:12:5-79
 	android:name
 		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:16:22-76
 uses-permission#android.permission.CHANGE_WIFI_STATE
@@ -90,28 +89,28 @@ MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transform
 		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:18:22-73
 uses-permission#android.permission.READ_PHONE_STATE
 ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:20:5-75
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:16:5-75
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:16:5-75
 MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:5-75
 MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:5-75
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:16:5-75
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:16:5-75
 	android:name
 		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:20:22-72
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:22:5-81
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:14:5-81
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:14:5-81
-MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:5-81
-MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:5-81
 MERGED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-81
 MERGED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-81
+MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:5-81
+MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:5-81
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:14:5-81
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:14:5-81
 	android:name
 		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:22:22-78
 uses-permission#android.permission.INTERNET
 ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:24:5-67
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:11:5-67
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:11:5-67
 MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-67
 MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-67
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:11:5-67
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:24:22-64
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
@@ -140,12 +139,6 @@ application
 ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:39:5-159:19
 MERGED from [:base] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/base/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-25:19
 MERGED from [:base] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/base/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-25:19
-MERGED from [co.lujun:androidtagview:1.0.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/androidtagview-1.0.0.aar/7d80da912e1ff4d604e76314b537d39c/AndroidManifest.xml:11:5-15:19
-MERGED from [co.lujun:androidtagview:1.0.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/androidtagview-1.0.0.aar/7d80da912e1ff4d604e76314b537d39c/AndroidManifest.xml:11:5-15:19
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:27:5-163:19
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:27:5-163:19
-MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:5-51:19
-MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:5-51:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/a1cd84f814254728ba3d9ea8cfcdef79/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/a1cd84f814254728ba3d9ea8cfcdef79/AndroidManifest.xml:9:5-20
 MERGED from [:blurringview-1.0.0:] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/blurringview-1.0.0.aar/c09d84870c2132bcb05bf94c6a7897d5/AndroidManifest.xml:11:5-13:44
@@ -154,6 +147,10 @@ MERGED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matis
 MERGED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:27:5-31:19
 MERGED from [com.android.support:percent:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/percent-26.1.0.aar/40e06e17cd2839fbdcc1dea9c419a972/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:percent:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/percent-26.1.0.aar/40e06e17cd2839fbdcc1dea9c419a972/AndroidManifest.xml:22:5-26:19
+MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:5-51:19
+MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:5-51:19
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:27:5-163:19
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:27:5-163:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/78735ad9e318589fd1a7b3da53f047f2/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/78735ad9e318589fd1a7b3da53f047f2/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/0bdea9767706316253a8c7f9b4af3bf9/AndroidManifest.xml:22:5-26:19
@@ -363,7 +360,7 @@ ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/Andr
 	android:grantUriPermissions
 		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:135:13-47
 	android:authorities
-		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:133:13-61
+		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:133:13-65
 	android:exported
 		ADDED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml:134:13-37
 	android:name
@@ -394,14 +391,6 @@ INJECTED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/A
 INJECTED from /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/app/src/main/AndroidManifest.xml
 MERGED from [:base] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/base/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:base] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/base/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [co.lujun:androidtagview:1.0.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/androidtagview-1.0.0.aar/7d80da912e1ff4d604e76314b537d39c/AndroidManifest.xml:7:5-9:41
-MERGED from [co.lujun:androidtagview:1.0.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/androidtagview-1.0.0.aar/7d80da912e1ff4d604e76314b537d39c/AndroidManifest.xml:7:5-9:41
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:7:5-9:41
-MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:library] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/library/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:library] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/library/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/a1cd84f814254728ba3d9ea8cfcdef79/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/a1cd84f814254728ba3d9ea8cfcdef79/AndroidManifest.xml:5:5-7:41
 MERGED from [:blurringview-1.0.0:] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/blurringview-1.0.0.aar/c09d84870c2132bcb05bf94c6a7897d5/AndroidManifest.xml:7:5-9:41
@@ -412,6 +401,12 @@ MERGED from [:jcvideoplayer-lib] /Users/zhangpeng/AndroidStudioProjects/CrowdCur
 MERGED from [:jcvideoplayer-lib] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/jcvideoplayer-lib/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:percent:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/percent-26.1.0.aar/40e06e17cd2839fbdcc1dea9c419a972/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:percent:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/percent-26.1.0.aar/40e06e17cd2839fbdcc1dea9c419a972/AndroidManifest.xml:20:5-44
+MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:7:5-9:41
+MERGED from [:library] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/library/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:library] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/library/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/78735ad9e318589fd1a7b3da53f047f2/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/78735ad9e318589fd1a7b3da53f047f2/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/0bdea9767706316253a8c7f9b4af3bf9/AndroidManifest.xml:20:5-44
@@ -470,6 +465,90 @@ ADDED from [:base] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/base/buil
 		ADDED from [:base] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/base/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:13-49
 	android:name
 		ADDED from [:base] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/base/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:13-70
+activity#com.zhihu.matisse.ui.MatisseActivity
+ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:9-73
+	android:name
+		ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:19-70
+activity#com.zhihu.matisse.internal.ui.AlbumPreviewActivity
+ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:29:9-87
+	android:name
+		ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:29:19-84
+activity#com.zhihu.matisse.internal.ui.SelectedPreviewActivity
+ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:9-90
+	android:name
+		ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:19-87
+meta-data#android.support.VERSION
+ADDED from [com.android.support:percent:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/percent-26.1.0.aar/40e06e17cd2839fbdcc1dea9c419a972/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/78735ad9e318589fd1a7b3da53f047f2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/78735ad9e318589fd1a7b3da53f047f2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/0bdea9767706316253a8c7f9b4af3bf9/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/0bdea9767706316253a8c7f9b4af3bf9/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/da1eaed59b6d7108af137cd332de0e4c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/da1eaed59b6d7108af137cd332de0e4c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f5054a292c5dd58b23630ae64f263850/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f5054a292c5dd58b23630ae64f263850/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2b06ab70865b207cffc81d77758ad49b/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2b06ab70865b207cffc81d77758ad49b/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c28d856687b017e7d994a3c0fa95f99a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c28d856687b017e7d994a3c0fa95f99a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/59b434ad446ec85af6daa06965f3ac0d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/59b434ad446ec85af6daa06965f3ac0d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e8c47e23efc20000601e4a853c7c3624/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e8c47e23efc20000601e4a853c7c3624/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/b636dccdd1a078c53297243e9b236e56/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/b636dccdd1a078c53297243e9b236e56/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/c2e2ca8ca444a547b540b899bf145e26/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/c2e2ca8ca444a547b540b899bf145e26/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:percent:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/percent-26.1.0.aar/40e06e17cd2839fbdcc1dea9c419a972/AndroidManifest.xml:25:13-35
+	android:name
+		ADDED from [com.android.support:percent:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/percent-26.1.0.aar/40e06e17cd2839fbdcc1dea9c419a972/AndroidManifest.xml:24:13-51
+activity#config.BaseShareActivity
+ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:9-24:20
+	android:screenOrientation
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:13-49
+	android:name
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:13-52
+activity#com.tencent.tauth.AuthActivity
+ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:29:9-41:20
+	android:launchMode
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:31:13-44
+	android:noHistory
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tencent100424468
+ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:33:13-40:29
+action#android.intent.action.VIEW
+ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:34:25-66
+category#android.intent.category.DEFAULT
+ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:17-76
+	android:name
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:37:17-78
+	android:name
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:37:27-75
+data
+ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:39:17-59
+	android:scheme
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:39:23-56
+activity#com.tencent.connect.common.AssistActivity
+ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:42:9-45:75
+	android:screenOrientation
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:44:13-49
+	android:theme
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:45:13-72
+	android:name
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:43:13-69
+meta-data#WEIBO_APPKEY
+ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:48:9-50:42
+	android:value
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:50:13-39
+	android:name
+		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:49:13-40
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:15:5-68
 	android:name
@@ -562,10 +641,6 @@ action#android.intent.action.PACKAGE_REMOVED
 ADDED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:57:17-80
 	android:name
 		ADDED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:57:25-77
-data
-ADDED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:59:17-50
-	android:scheme
-		ADDED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:59:23-47
 intent-filter#action:name:android.intent.action.USER_PRESENT
 ADDED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:61:13-63:29
 action#android.intent.action.USER_PRESENT
@@ -726,86 +801,6 @@ grant-uri-permission
 ADDED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:161:13-62
 	android:pathPattern
 		ADDED from [com.umeng.sdk:push:4.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/push-4.1.0.aar/c5dbee6297c30f615ff965d8084044c1/AndroidManifest.xml:161:35-59
-activity#config.BaseShareActivity
-ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:9-24:20
-	android:screenOrientation
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:13-49
-	android:name
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:13-52
-activity#com.tencent.tauth.AuthActivity
-ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:29:9-41:20
-	android:launchMode
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:31:13-44
-	android:noHistory
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:32:13-37
-	android:name
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:13-58
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tencent100424468
-ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:33:13-40:29
-action#android.intent.action.VIEW
-ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:34:17-69
-	android:name
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:34:25-66
-category#android.intent.category.DEFAULT
-ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:17-76
-	android:name
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:27-73
-category#android.intent.category.BROWSABLE
-ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:37:17-78
-	android:name
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:37:27-75
-activity#com.tencent.connect.common.AssistActivity
-ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:42:9-45:75
-	android:screenOrientation
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:44:13-49
-	android:theme
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:45:13-72
-	android:name
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:43:13-69
-meta-data#WEIBO_APPKEY
-ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:48:9-50:42
-	android:value
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:50:13-39
-	android:name
-		ADDED from [:share] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/share/build/intermediates/manifests/full/debug/AndroidManifest.xml:49:13-40
-activity#com.zhihu.matisse.ui.MatisseActivity
-ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:9-73
-	android:name
-		ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:19-70
-activity#com.zhihu.matisse.internal.ui.AlbumPreviewActivity
-ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:29:9-87
-	android:name
-		ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:29:19-84
-activity#com.zhihu.matisse.internal.ui.SelectedPreviewActivity
-ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:9-90
-	android:name
-		ADDED from [:matisse] /Users/zhangpeng/AndroidStudioProjects/CrowdCurtain/matisse/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:19-87
-meta-data#android.support.VERSION
-ADDED from [com.android.support:percent:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/percent-26.1.0.aar/40e06e17cd2839fbdcc1dea9c419a972/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/78735ad9e318589fd1a7b3da53f047f2/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/78735ad9e318589fd1a7b3da53f047f2/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/0bdea9767706316253a8c7f9b4af3bf9/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/0bdea9767706316253a8c7f9b4af3bf9/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/da1eaed59b6d7108af137cd332de0e4c/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/da1eaed59b6d7108af137cd332de0e4c/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f5054a292c5dd58b23630ae64f263850/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f5054a292c5dd58b23630ae64f263850/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2b06ab70865b207cffc81d77758ad49b/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2b06ab70865b207cffc81d77758ad49b/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c28d856687b017e7d994a3c0fa95f99a/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c28d856687b017e7d994a3c0fa95f99a/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/59b434ad446ec85af6daa06965f3ac0d/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/59b434ad446ec85af6daa06965f3ac0d/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e8c47e23efc20000601e4a853c7c3624/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e8c47e23efc20000601e4a853c7c3624/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/b636dccdd1a078c53297243e9b236e56/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/b636dccdd1a078c53297243e9b236e56/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-compat:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/c2e2ca8ca444a547b540b899bf145e26/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/c2e2ca8ca444a547b540b899bf145e26/AndroidManifest.xml:26:9-28:38
-	android:value
-		ADDED from [com.android.support:percent:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/percent-26.1.0.aar/40e06e17cd2839fbdcc1dea9c419a972/AndroidManifest.xml:25:13-35
-	android:name
-		ADDED from [com.android.support:percent:26.1.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/percent-26.1.0.aar/40e06e17cd2839fbdcc1dea9c419a972/AndroidManifest.xml:24:13-51
 meta-data#android.arch.lifecycle.VERSION
 ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/zhangpeng/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/4dea9e0ff9a5585585a2fff23f20c0fb/AndroidManifest.xml:25:9-27:47
 	android:value

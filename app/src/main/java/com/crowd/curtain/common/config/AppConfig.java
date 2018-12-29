@@ -26,7 +26,7 @@ public class AppConfig {
     public final static String TEST = "test";
     public final static String UMENG_SECRET = "ff12e23775a5d291c98d89a87246e781";
     public final static String UMENG_APPKEY = "5aab5b60b27b0a22810003cb";
-    public static final String PORT_TYPE = RELEASE;
+    public static final String PORT_TYPE = DEBUG;
 
     /**
      * 判断Service是否在运行

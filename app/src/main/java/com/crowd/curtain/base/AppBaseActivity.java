@@ -110,7 +110,7 @@ public class AppBaseActivity extends BaseActivity implements BroadCastReceiverUt
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
                     intent.putExtra(MediaStore.EXTRA_OUTPUT,
-                            FileProvider.getUriForFile(mContext,"curtain.photograph.com.fileprovider", file));
+                            FileProvider.getUriForFile(mContext,"com.crowd.curtain.fileprovider", file));
                 }else {
                     intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
                 }

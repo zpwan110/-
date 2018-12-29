@@ -27,9 +27,9 @@ public class ServerConfig {
         }
     }
 
-    public static final String BASE_URL_DEBUG = "http://cl.gunaimu.com";
-    public static final String BASE_URL_TEST = "http://192.168.16.174:3001";
-    public static final String BASE_URL_RELEASE = "https://gxqfz.omclml.com";
+    public static final String BASE_URL_DEBUG = "http://cl.yifei.site";
+    public static final String BASE_URL_TEST = "http://cl.yifei.site";
+    public static final String BASE_URL_RELEASE = "https://cl.yifei.site";
 
     public static final String BASE_H5_URL_RELEASE = "https://gxqfz.omclml.com";
     public static final String BASE_H5_URL_DEBUG = "https://gxqfz.omclml.com";
@@ -57,7 +57,7 @@ public class ServerConfig {
         return BASE_URL+"/personals";
     }
     public static String getTypeCurtain() {
-        return BASE_URL+"/homes/";
+        return BASE_URL+"/products/list/";
     }
     public static String getLoginOut() {
         return BASE_URL+"/logouts";

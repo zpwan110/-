@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.crowd.curtain"
     android:versionCode="1"
-    android:versionName="1.0.1" >
+    android:versionName="1.0.0" >
 
     <uses-sdk
         android:minSdkVersion="19"
-        android:targetSdkVersion="26" />
+        android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -144,7 +144,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.crowd.com.fileprovider"
+            android:authorities="com.crowd.curtain.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -184,6 +184,40 @@
         <activity
             android:name="base.imagezoom.activity.ImagePagerActivity"
             android:screenOrientation="portrait" />
+        <activity android:name="com.zhihu.matisse.ui.MatisseActivity" />
+        <activity android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity" />
+        <activity android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+
+        <activity
+            android:name="config.BaseShareActivity"
+            android:screenOrientation="portrait" >
+        </activity> <!-- Weixin start -->
+        <!-- QQ QQZone start -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- QQ QQZone end -->
+        <!-- 微博 -->
+        <meta-data
+            android:name="WEIBO_APPKEY"
+            android:value="1851986776" />
 
         <service
             android:name="com.taobao.accs.ChannelService"
@@ -321,40 +355,6 @@
             <grant-uri-permission android:pathPattern=".*" />
         </provider>
 
-        <activity
-            android:name="config.BaseShareActivity"
-            android:screenOrientation="portrait" >
-        </activity> <!-- Weixin start -->
-        <!-- QQ QQZone start -->
-        <activity
-            android:name="com.tencent.tauth.AuthActivity"
-            android:launchMode="singleTask"
-            android:noHistory="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:scheme="tencent100424468" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.tencent.connect.common.AssistActivity"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- QQ QQZone end -->
-        <!-- 微博 -->
-        <meta-data
-            android:name="WEIBO_APPKEY"
-            android:value="1851986776" />
-
-        <activity android:name="com.zhihu.matisse.ui.MatisseActivity" />
-        <activity android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity" />
-        <activity android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity" />
-
-        <meta-data
-            android:name="android.support.VERSION"
-            android:value="26.1.0" />
         <meta-data
             android:name="android.arch.lifecycle.VERSION"
             android:value="27.0.0-SNAPSHOT" />

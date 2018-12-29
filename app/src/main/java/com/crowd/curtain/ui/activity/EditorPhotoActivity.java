@@ -97,7 +97,7 @@ public class EditorPhotoActivity extends AppBaseActivity implements PolyToPolyVi
     public static Intent newIntent(File file,String image) {
         Intent it = new Intent(App.getContext(), EditorPhotoActivity.class);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
-           Uri uri = FileProvider.getUriForFile(App.getContext(), "curtain.photograph.com.fileprovider", file);
+           Uri uri = FileProvider.getUriForFile(App.getContext(), "com.crowd.curtain.fileprovider", file);
             it.putExtra(BG_URI,uri);
         }else {
             it.putExtra(BG_URI,Uri.fromFile(file));
@@ -108,7 +108,7 @@ public class EditorPhotoActivity extends AppBaseActivity implements PolyToPolyVi
     public static Intent newIntent(String filePath,String parentId,String proId) {
         Intent it = new Intent(App.getContext(), EditorPhotoActivity.class);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
-           Uri uri = FileProvider.getUriForFile(App.getContext(), "curtain.photograph.com.fileprovider", new File(filePath));
+           Uri uri = FileProvider.getUriForFile(App.getContext(), "com.crowd.curtain.fileprovider", new File(filePath));
             it.putExtra(BG_URI,uri);
         }else {
             it.putExtra(BG_URI,Uri.fromFile(new File(filePath)));

@@ -13,7 +13,7 @@ public final class R {
         public static final int overlayColor = 0x7f02013c;
     }
     public static final class color {
-        public static final int default_overlay_color = 0x7f040036;
+        public static final int default_overlay_color = 0x7f040037;
     }
     public static final class integer {
         public static final int default_blur_radius = 0x7f080004;

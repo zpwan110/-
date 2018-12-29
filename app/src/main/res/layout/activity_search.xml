@@ -1,127 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    android:orientation="vertical">
+
     <LinearLayout
         android:id="@+id/search_layout"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="#f0f0f0"
-        android:orientation="horizontal"
-        >
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
         <ImageView
             android:id="@+id/tv_backLeft"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:src="@mipmap/back_left"
-            android:scaleType="fitCenter"
-            android:visibility="visible"
+            android:layout_gravity="center_vertical"
             android:padding="10dp"
-            />
+            android:scaleType="fitCenter"
+            android:src="@mipmap/back_left"
+            android:visibility="visible" />
+
         <base.widget.searchview.SearchEditText
-            android:layout_weight="1"
             android:id="@+id/edt_search"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:paddingLeft="20dp"
-            android:background="#ffffff"
-            android:drawableLeft="@null"
-            android:drawablePadding="8dp"
-            android:gravity="start|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/search_bg"
+            android:drawableStart="@mipmap/ico_search"
+            android:gravity="center|left"
+            android:hint="搜索你需要的商品"
             android:imeOptions="actionSearch"
             android:singleLine="true"
             android:textColor="#000000"
             android:textSize="17sp"
-            android:hint="搜索你需要的商品"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginRight="20dp"
             />
+
         <TextView
             android:id="@+id/rightText"
             android:layout_width="45dp"
             android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
             android:gravity="center"
-            android:text="取消"
-            />
+            android:text="取消" />
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#dbdbdb"
-        android:layout_alignParentBottom="true"/>
-
-    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="#dbdbdb" />
+    <ScrollView
+        android:id="@+id/nestedScroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:scrollbars="none">
         <LinearLayout
             android:id="@+id/serach_from"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-            <co.lujun.androidtagview.TagContainerLayout
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/hot_search"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:padding="10dp"
-                app:container_enable_drag="false"
-                app:horizontal_interval="10dp"
-                app:vertical_interval="10dp"
-                app:tag_clickable="true"
-                app:tag_theme="none"
-                app:tag_corner_radius="8dp"
-                app:tag_border_color="#000000"
-                app:tag_vertical_padding="10dp"
-                app:tag_horizontal_padding="10dp"
-                app:tag_border_width="1dp"
-                app:tag_background_color="#ffffff"
-                app:tag_text_size="16sp"
-                app:container_border_radius="0dp"
-                app:container_background_color="#ffffff"
-                />
+            android:orientation="vertical"
+            >
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#F6F6F6"
-                android:gravity="center"
-                android:visibility="visible"
-                android:text="热门搜索" />
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="热门搜索"
+                android:visibility="visible" />
+            <base.widget.tagview.TagContainerLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/hot_search"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                app:container_background_color="#ffffff"
+                app:container_border_radius="0dp"
+                app:container_enable_drag="false"
+                app:horizontal_interval="10dp"
+                app:tag_background_color="#ffffff"
+                app:tag_border_color="#eeeeee"
+                app:tag_border_width="0.6dp"
+                app:tag_clickable="true"
+                app:tag_corner_radius="5dp"
+                app:tag_horizontal_padding="20dp"
+                app:tag_text_color="#000000"
+                app:tag_text_size="16sp"
+                app:tag_theme="1000000"
+                app:tag_vertical_padding="15dp"
+                app:vertical_interval="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_time"
+                    android:visibility="visible" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center|left"
+                    android:text="最近搜索"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dbdbdb" />
             <base.widget.searchview.SearchListView
                 android:id="@+id/history_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
-            </base.widget.searchview.SearchListView>
+                android:listSelector="@null">
 
-            <TextView
+            </base.widget.searchview.SearchListView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dbdbdb" />
+            <LinearLayout
                 android:id="@+id/clear_search"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="#F6F6F6"
-                android:gravity="center"
-                android:visibility="invisible"
-                android:text="清除搜索历史" />
-        </LinearLayout>
-        <base.widget.recycler.BaseRefreshLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/searchParent"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/searchRecyclear"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:scrollbars="none" />
-        </base.widget.recycler.BaseRefreshLayout>
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible">
 
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="center"
+                    android:src="@mipmap/ic_delete" />
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="#F6F6F6"
+                    android:gravity="center"
+                    android:text="清空历史记录" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <base.widget.recycler.BaseRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/searchParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/searchRecyclear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scrollbars="none" />
+    </base.widget.recycler.BaseRefreshLayout>
+
 </LinearLayout>

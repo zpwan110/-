@@ -6,32 +6,90 @@ package com.crowd.curtain.common.model;
 
 public class CateEntity {
 /**
- "primaryKey": 4,
- "name": "书房",
- "activeIcon": "http://imagecl.gunaimu.com/20180301/f76830f72e70c6e9d88bc6817faa36bc.png",
- "inactiveIcon": "http://imagecl.gunaimu.com/20180301/dcf7b199d86dccfe5dc7753309003185.png"
+ "id": "3",
+ "sort": "7",
+ "name": "儿童",
+ "desc": "儿童",
+ "parent_id": "1",
+ "active_icon": "20180707/1214339654aa2b29aa8913294e6b36e4.png",
+ "inactive_icon": "20180707/84725e8a5155b5185e5aa05d740be6ca.png",
+ "created_at": "1519634541",
+ "updated_at": "1533890080"
  */
-    public String productCateId;
+    public String id;
+    public String sort;
     public String name;
-    public String activeIcon;
-    public String inactiveIcon;
-    public boolean selected =false;
-    public boolean isAll =false;
+    public String desc;
+    public String parent_id;
+    public String active_icon;
+    public String inactive_icon;
+    public boolean isSelect;
+
 
     public CateEntity() {
     }
 
-    public CateEntity(String productCateId,String name,boolean isAll) {
-        this.productCateId = productCateId;
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getSort() {
+        return sort;
+    }
+
+    public void setSort(String sort) {
+        this.sort = sort;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
-        this.isAll = isAll;
     }
 
-
-    public void setSelected(boolean selected) {
-        this.selected = selected;
+    public String getDesc() {
+        return desc;
     }
-    public boolean isSelected() {
-        return selected;
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public String getParent_id() {
+        return parent_id;
+    }
+
+    public void setParent_id(String parent_id) {
+        this.parent_id = parent_id;
+    }
+
+    public String getActive_icon() {
+        return active_icon;
+    }
+
+    public void setActive_icon(String active_icon) {
+        this.active_icon = active_icon;
+    }
+
+    public String getInactive_icon() {
+        return inactive_icon;
+    }
+
+    public void setInactive_icon(String inactive_icon) {
+        this.inactive_icon = inactive_icon;
+    }
+
+    public boolean isSelect() {
+        return isSelect;
+    }
+
+    public void setSelect(boolean select) {
+        isSelect = select;
     }
 }

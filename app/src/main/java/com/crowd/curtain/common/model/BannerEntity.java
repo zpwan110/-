@@ -6,12 +6,13 @@ package com.crowd.curtain.common.model;
 
 public class BannerEntity {
 /**
- "primaryKey": 1, # 图片本身ID
- "name": "首页轮播图1", # 图片本身名称
- "image": "http://imagecl.gunaimu.com/20180228/daa2d57f5139639cf04a2aedccd99bc5.jpg", # 图片路劲
- "productId": 2 # 对应的产品ID
+ "bannerId": 2,
+ "name": "01",
+ "image": "https://gxqfz.omclml.com/Uploads/20180615/51755716533f206e61da2df4d90d47dc.jpg",
+ "productId": 31,
+ "thumb": "https://gxqfz.omclml.com/thumb/20180615/51755716533f206e61da2df4d90d47dc.jpg"
  */
-    public String primaryKey;
+    public String thumb;
     public String name;
     public String image;
     public String productId;

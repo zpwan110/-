@@ -87,20 +87,17 @@ public class HorizontalListViewAdapter extends BaseAdapter {
         }else{
             holder=(ViewHolder)convertView.getTag();
         }
-        if(!lists.get(position).isAll){
-            PicassoImageLoader.getInstance().displayImage(mContext,lists.get(position).activeIcon,holder.isImageHight);
-            PicassoImageLoader.getInstance().displayImage(mContext,lists.get(position).inactiveIcon,holder.isImage);
+
+            PicassoImageLoader.getInstance().displayImage(mContext,lists.get(position).active_icon,holder.isImageHight);
+            PicassoImageLoader.getInstance().displayImage(mContext,lists.get(position).inactive_icon,holder.isImage);
             holder.mTitle.setText(lists.get(position).name);
-            if(lists.get(position).isSelected()){
+            if(lists.get(position).isSelect()){
                 holder.isImageHight.setVisibility(View.VISIBLE);
             }else {
                 holder.isImageHight.setVisibility(View.INVISIBLE);
             }
-        }else{
             holder.mTitle.setText("全部");
             PicassoImageLoader.getInstance().displayImage(mContext,R.mipmap.quanbu,holder.isImage);
-        }
-
 
         return convertView;
     }
@@ -109,7 +106,7 @@ public class HorizontalListViewAdapter extends BaseAdapter {
         if (xHorizontalListView != null) {
             int start = xHorizontalListView.getFirstVisiblePosition();
             for (int i = start, j = xHorizontalListView.getLastVisiblePosition(); i <= j; i++) {
-                if (cateEntity.productCateId == ((CateEntity) xHorizontalListView.getItemAtPosition(i)).productCateId) {
+                if (cateEntity.id == ((CateEntity) xHorizontalListView.getItemAtPosition(i)).id) {
                     View view = xHorizontalListView.getChildAt(i - start);
                     getView(i, view, xHorizontalListView);
                     break;

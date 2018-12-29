@@ -17,5 +17,5 @@
 <paths>
     <external-path
         name="my_images"
-        path="Android/data/com.crowd.com/cache/"/>
+        path="Android/data/com.crowd.curtain/cache/"/>
 </paths>

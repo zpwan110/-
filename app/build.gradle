@@ -8,7 +8,7 @@ android {
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode 1
-        versionName "1.0.1"
+        versionName "1.0.0"
         renderscriptTargetApi 21
         renderscriptSupportModeEnabled true
         testInstrumentationRunner rootProject.ext.android.testInstrumentationRunner
@@ -108,7 +108,7 @@ repositories {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation(name: 'blurringview-1.0.0', ext: 'aar')
@@ -117,14 +117,13 @@ dependencies {
     implementation project(':jcvideoplayer-lib')
     implementation rootProject.ext.dependencies.constraintLayout
     implementation rootProject.ext.dependencies.percent
-    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation rootProject.ext.dependencies.picasso
     //PushSDK必须依赖基础组件库，所以需要加入对应依赖
-    compile 'com.umeng.sdk:common:1.5.0'
+    implementation 'com.umeng.sdk:common:1.5.0'
     //PushSDK必须依赖utdid库，所以需要加入对应依赖
-    compile 'com.umeng.sdk:utdid:1.1.5.3'
+    implementation 'com.umeng.sdk:utdid:1.1.5.3'
     //PushSDK
-    compile 'com.umeng.sdk:push:4.1.0'
-    api 'co.lujun:androidtagview:1.0.0'
-    compile project(path: ':share')
-    compile project(path: ':library')
+    implementation 'com.umeng.sdk:push:4.1.0'
+    implementation project(path: ':share')
+    implementation project(path: ':library')
 }

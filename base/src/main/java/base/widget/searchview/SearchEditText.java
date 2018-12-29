@@ -5,6 +5,8 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
+
+import base.util.DensityUtils;
 import jingshu.com.base.R;
 
 /**
@@ -44,6 +46,7 @@ public class SearchEditText extends android.support.v7.widget.AppCompatEditText 
 
         setCompoundDrawablesWithIntrinsicBounds(searchDrawable, null,
                 null, null);
+        setCompoundDrawablePadding(DensityUtils.dip2px(15));
         // setCompoundDrawablesWithIntrinsicBounds(Drawable left, Drawable top, Drawable right, Drawable bottom)介绍
         // 作用：在EditText上、下、左、右设置图标（相当于android:drawableLeft=""  android:drawableRight=""）
         // 注1：setCompoundDrawablesWithIntrinsicBounds（）传入的Drawable的宽高=固有宽高（自动通过getIntrinsicWidth（）& getIntrinsicHeight（）获取）

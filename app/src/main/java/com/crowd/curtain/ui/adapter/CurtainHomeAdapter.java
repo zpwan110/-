@@ -59,7 +59,7 @@ public class CurtainHomeAdapter extends BaseRecyclerAdapter<CurtainEntity> {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((BaseActivity)mContext).toActivity(ProductDetailActivity.newIntent(model.productId));
+                ((BaseActivity)mContext).toActivity(ProductDetailActivity.newIntent(model.productId+""));
             }
         });
     }

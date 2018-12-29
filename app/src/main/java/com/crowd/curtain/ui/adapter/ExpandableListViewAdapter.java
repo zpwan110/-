@@ -106,7 +106,7 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
         text.setText(curtainInfo.cateName);
         Resources resources= mContext.getResources();
         if(curtainInfo.select){
-            view.setBackgroundResource(R.color.text_bg_color);
+            view.setBackgroundResource(R.color.class_bg_color);
             text.setTextColor(resources.getColor(R.color.text_color));
         }else{
             view.setBackgroundResource(R.color.text_color);

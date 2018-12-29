@@ -75,7 +75,7 @@ public class SettingActivity extends AppBaseActivity {
     }
 
     public void  initData(){
-        appVersion.setText("当前版本"+getLocalVersionName(this));
+        appVersion.setText("当前版本V"+getLocalVersionName(this));
         if(TextUtils.isEmpty(AppSharePerference.getUserToken())){
             tvAccount.setText("未登录");
             llUnlogin.setVisibility(View.VISIBLE);

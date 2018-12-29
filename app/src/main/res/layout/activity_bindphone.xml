@@ -26,7 +26,14 @@
         android:background="@drawable/border_shadow_bottom"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
+        android:layout_marginTop="20dp"
         >
+        <ImageView
+            android:padding="20dp"
+            android:layout_width="@dimen/login_input_height"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/icon_mobile"/>
         <base.widget.edittext.ClearEditText
             xmlns:clear="http://schemas.android.com/apk/res-auto"
             clear:clear_drawable="@mipmap/ico_delete_all"
@@ -49,7 +56,14 @@
         android:background="@drawable/border_shadow_bottom"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
+        android:layout_marginTop="15dp"
         >
+        <ImageView
+            android:padding="20dp"
+            android:layout_width="@dimen/login_input_height"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/pwd"/>
         <base.widget.edittext.ClearEditText
             android:layout_weight="1"
             xmlns:clear="http://schemas.android.com/apk/res-auto"
@@ -66,20 +80,21 @@
             android:id="@+id/btn_code"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:textColor="#ffffff"
-            android:background="@drawable/login_btn_bg"
+            android:textColor="#000000"
+            android:background="@drawable/wihte_btn_bg"
             android:text="获取验证码"
             android:textSize="13sp"
             android:gravity="center"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
+            android:layout_marginRight="10dp"
             android:layout_gravity="center_vertical"
             />
     </LinearLayout>
     <TextView
         android:id="@+id/btn_confirm"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="45dp"
         android:textColor="#ffffff"
         android:background="@drawable/login_btn_bg"
         android:text="确定"

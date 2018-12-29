@@ -1,10 +1,20 @@
 package com.crowd.curtain.ui.fragment;
 
+import android.app.AlertDialog;
+import android.graphics.Rect;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -22,6 +32,8 @@ import base.util.DensityUtils;
 import base.widget.recycler.BaseRefreshLayout;
 import base.widget.recycler.LinearSpacingItemDecoration;
 import base.widget.recycler.ViewOnItemChildClickListener;
+import base.widget.searchview.RecordSQLiteOpenHelper;
+
 import com.crowd.curtain.R;
 import com.crowd.curtain.api.SearchApi;
 import com.crowd.curtain.common.model.CurtainInfo;
@@ -31,6 +43,7 @@ import com.crowd.curtain.ui.activity.SearchActivity;
 import com.crowd.curtain.ui.adapter.CurtainSearchAdapter;
 import com.crowd.curtain.ui.adapter.ExpandableListViewAdapter;
 
+import static android.support.v7.widget.DividerItemDecoration.VERTICAL;
 import static base.widget.recycler.BaseRefreshLayout.LOADMORE;
 import static base.widget.recycler.BaseRefreshLayout.REFRESH;
 
@@ -49,6 +62,16 @@ public class ClassisFragment extends BaseFragment implements ExpandableListView.
     BaseRefreshLayout baseRefreshLayout;
     @Id(R.id.recyclerCurtain)
     RecyclerView curtaiRecycler;
+    @Id(R.id.edt_search)
+    private EditText etSearch;
+    @Id(R.id.unleft)
+    private ImageView unleft;
+    @Id(R.id.classes_title)
+    private TextView classesTitle;
+    @Id(R.id.unRight)
+    private TextView unRight;
+    @Id(R.id.iv_search)
+    private ImageView ivSearch;
 
     ExpandableListViewAdapter expandableListViewAdapter;
     public int groupIndex=0;
@@ -58,16 +81,21 @@ public class ClassisFragment extends BaseFragment implements ExpandableListView.
     private String currentCate="";
     private int cateType=-1;
 
+
     @Override
     protected void initViews() {
         super.initViews();
+        classesTitle.setText("分类");
         curtainSearchAdapter = new CurtainSearchAdapter(mContext);
         curtaiRecycler.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false));
         curtaiRecycler.setAdapter(curtainSearchAdapter);
+
         curtainSearchAdapter.setOnItemChildClickListener(this);
         baseRefreshLayout.setNetworkAnomalyView(null, false);
         baseRefreshLayout.setDelegate(this);
-        curtaiRecycler.addItemDecoration(new LinearSpacingItemDecoration(DensityUtils.dip2px(15)));
+        DividerItemDecoration divider = new DividerItemDecoration(mContext,DividerItemDecoration.VERTICAL);
+        divider.setDrawable(ContextCompat.getDrawable(mContext,R.drawable.custom_divider));
+        curtaiRecycler.addItemDecoration(divider);
 
         expandableListViewAdapter = new ExpandableListViewAdapter(mContext);
         expandableListView.setAdapter(expandableListViewAdapter);
@@ -75,6 +103,7 @@ public class ClassisFragment extends BaseFragment implements ExpandableListView.
         expandableListView.setOnChildClickListener(this);
         expandableListView.setGroupIndicator(null);
         getCurtainType();
+        initSearch();
     }
 
     @Override
@@ -82,6 +111,22 @@ public class ClassisFragment extends BaseFragment implements ExpandableListView.
         super.setArguments(args);
         cateType = args.getInt("cateType");
         getCurtainType();
+    }
+    @Click(R.id.iv_search)
+    public void showSearchView(){
+        unleft.setVisibility(View.VISIBLE);
+        etSearch.setVisibility(View.VISIBLE);
+        unRight.setVisibility(View.VISIBLE);
+        classesTitle.setVisibility(View.GONE);
+        ivSearch.setVisibility(View.GONE);
+    }
+    @Click(R.id.unRight)
+    public void showTitleView(){
+        unleft.setVisibility(View.INVISIBLE);
+        etSearch.setVisibility(View.GONE);
+        unRight.setVisibility(View.INVISIBLE);
+        classesTitle.setVisibility(View.VISIBLE);
+        ivSearch.setVisibility(View.VISIBLE);
     }
     private void getCurtainType(){
         SearchApi.getCateList(new Callback<JSONObject>() {
@@ -118,7 +163,7 @@ public class ClassisFragment extends BaseFragment implements ExpandableListView.
             }
         });
     }
-    @Click(R.id.leftIcon)
+
     private void toSearchView(){
         ((BaseActivity)getActivity()).toActivity(SearchActivity.newIntent());
     }
@@ -190,7 +235,25 @@ public class ClassisFragment extends BaseFragment implements ExpandableListView.
             }
         });
     }
+    public void initSearch() {
+        etSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+            // 输入文本后调用该方法
+            @Override
+            public void afterTextChanged(Editable s) {
+                currentCate = etSearch.getText().toString();
+                searchCurtain(1,currentNum,currentCate,REFRESH);
+            }
+        });
+    }
     @Override
     public void onItemChildClick(View v, int position) {
 

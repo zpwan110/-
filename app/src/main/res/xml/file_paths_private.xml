@@ -17,8 +17,8 @@
 <paths>
    <!-- <external-path
         name="my_images"
-        path="Android/data/curtain.photograph.com/files/Pictures"/>-->
+        path="Android/data/com.crowd.curtain/files/Pictures"/>-->
     <external-path
         name="app_cache"
-        path="Android/data/com.crowd.com/cache/" />
+        path="Android/data/com.crowd.curtain/cache/" />
 </paths>

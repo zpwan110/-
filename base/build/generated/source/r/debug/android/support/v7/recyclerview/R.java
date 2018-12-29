@@ -8,24 +8,24 @@ package android.support.v7.recyclerview;
 
 public final class R {
     public static final class attr {
-        public static int fastScrollEnabled = 0x7f040087;
-        public static int fastScrollHorizontalThumbDrawable = 0x7f040088;
-        public static int fastScrollHorizontalTrackDrawable = 0x7f040089;
-        public static int fastScrollVerticalThumbDrawable = 0x7f04008a;
-        public static int fastScrollVerticalTrackDrawable = 0x7f04008b;
-        public static int font = 0x7f04008d;
-        public static int fontProviderAuthority = 0x7f04008f;
-        public static int fontProviderCerts = 0x7f040090;
-        public static int fontProviderFetchStrategy = 0x7f040091;
-        public static int fontProviderFetchTimeout = 0x7f040092;
-        public static int fontProviderPackage = 0x7f040093;
-        public static int fontProviderQuery = 0x7f040094;
-        public static int fontStyle = 0x7f040095;
-        public static int fontWeight = 0x7f040096;
-        public static int layoutManager = 0x7f0400b4;
-        public static int reverseLayout = 0x7f0400f6;
-        public static int spanCount = 0x7f040109;
-        public static int stackFromEnd = 0x7f04010f;
+        public static int fastScrollEnabled = 0x7f04008d;
+        public static int fastScrollHorizontalThumbDrawable = 0x7f04008e;
+        public static int fastScrollHorizontalTrackDrawable = 0x7f04008f;
+        public static int fastScrollVerticalThumbDrawable = 0x7f040090;
+        public static int fastScrollVerticalTrackDrawable = 0x7f040091;
+        public static int font = 0x7f040093;
+        public static int fontProviderAuthority = 0x7f040095;
+        public static int fontProviderCerts = 0x7f040096;
+        public static int fontProviderFetchStrategy = 0x7f040097;
+        public static int fontProviderFetchTimeout = 0x7f040098;
+        public static int fontProviderPackage = 0x7f040099;
+        public static int fontProviderQuery = 0x7f04009a;
+        public static int fontStyle = 0x7f04009b;
+        public static int fontWeight = 0x7f04009c;
+        public static int layoutManager = 0x7f0400bb;
+        public static int reverseLayout = 0x7f0400fd;
+        public static int spanCount = 0x7f040110;
+        public static int stackFromEnd = 0x7f040116;
     }
     public static final class bool {
         public static int abc_action_bar_embed_tabs = 0x7f050001;
@@ -130,18 +130,18 @@ public final class R {
         public static int Widget_Compat_NotificationActionText = 0x7f160173;
     }
     public static final class styleable {
-        public static int[] FontFamily = { 0x7f04008f, 0x7f040090, 0x7f040091, 0x7f040092, 0x7f040093, 0x7f040094 };
+        public static int[] FontFamily = { 0x7f040095, 0x7f040096, 0x7f040097, 0x7f040098, 0x7f040099, 0x7f04009a };
         public static int FontFamily_fontProviderAuthority = 0;
         public static int FontFamily_fontProviderCerts = 1;
         public static int FontFamily_fontProviderFetchStrategy = 2;
         public static int FontFamily_fontProviderFetchTimeout = 3;
         public static int FontFamily_fontProviderPackage = 4;
         public static int FontFamily_fontProviderQuery = 5;
-        public static int[] FontFamilyFont = { 0x7f04008d, 0x7f040095, 0x7f040096 };
+        public static int[] FontFamilyFont = { 0x7f040093, 0x7f04009b, 0x7f04009c };
         public static int FontFamilyFont_font = 0;
         public static int FontFamilyFont_fontStyle = 1;
         public static int FontFamilyFont_fontWeight = 2;
-        public static int[] RecyclerView = { 0x010100f1, 0x010100c4, 0x7f040087, 0x7f040088, 0x7f040089, 0x7f04008a, 0x7f04008b, 0x7f0400b4, 0x7f0400f6, 0x7f040109, 0x7f04010f };
+        public static int[] RecyclerView = { 0x010100f1, 0x010100c4, 0x7f04008d, 0x7f04008e, 0x7f04008f, 0x7f040090, 0x7f040091, 0x7f0400bb, 0x7f0400fd, 0x7f040110, 0x7f040116 };
         public static int RecyclerView_android_descendantFocusability = 0;
         public static int RecyclerView_android_orientation = 1;
         public static int RecyclerView_fastScrollEnabled = 2;

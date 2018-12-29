@@ -28,10 +28,10 @@ repositories {
 }
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     api rootProject.ext.dependencies.picasso
     implementation rootProject.ext.dependencies.appcompatV7
-    testCompile rootProject.ext.dependencies.junit
+    testImplementation rootProject.ext.dependencies.junit
 }
