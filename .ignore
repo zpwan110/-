@@ -1,0 +1,12 @@
+app/.idea
+app/build
+app/gradle
+
+base/.idea
+base/build
+base/gradle
+
+jcvideoplayer-lib/build
+library/build
+matisse/build
+share/build
